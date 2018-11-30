@@ -4,7 +4,7 @@ const app = express();
 const hbs = require('hbs');
 require('./hbs/helpers'); // Con esto llamamos a los helpers
 
-const port = process.env.port || 3000; // Conseguimos el puerto del entorno, esto para tomar el puerto del servidor que se nos ha 
+const port = process.env.port; // || 3000; // Conseguimos el puerto del entorno, esto para tomar el puerto del servidor que se nos ha 
 // brindado, en caso no exista tal entorno, tomará el puerto 3000
  
 app.use(express.static(__dirname + '/public')); // creando el middleware, con esto mostrará la pagina web

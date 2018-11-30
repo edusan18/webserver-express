@@ -46,3 +46,19 @@ npm start
   npm run nodemon
 
 18) Heroku, trabaja igual que git, por lo que tendremos que crear el gitignore para ignorar archivos
+19) ejecuamos los siguientes comandos ya conocidos git:
+
+  git init //Iniciamos un repositorio
+  git status // Vemos los archivos a subir a git
+  git add . // Para agregarlos todos a git
+  git commit -m "Primer Commit" // Hacemos un commit a git y estoy listo para subirlo a heroku
+
+20) Entramos a la pagina de heroku, en la seccion deploy, deploying using Heroku git
+Pero antes que nada debemos conectarnos a Heroku con nuestro usuario y Password, es por pc
+heroku login // podemos hacerlo desde la consola de git o node, nos abrira un browser para loguearnos
+
+heroku git:remote -a eduardocorrea-webpage // podemos hacerlo desde la consola de git,  se conectará al host
+
+git push heroku master // subimos el proyecto a heroku, heroku va a instalar node y los componentes
+
+heroku open // esto abre nuestra web en el navegador
