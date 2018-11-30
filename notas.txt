@@ -1,0 +1,48 @@
+... Lo anterior esta en la version anterior
+
+8) Usaremos hbs, este paquete le permitira a express renderizar las paginas que usan una sintaxis similar y poderle mandar
+// una respuesta dinamica al cliente, eintalamos hbs
+// arracaremos este proyecto desde el archivo 04.server.js
+comando: npm install hbs --save
+
+9) Creamos la carpeta view y su contenido
+
+10) todo lo que habia en public lo renombramos con el sufijo old
+Ejecutaremos el comando:
+
+nodemon 04.server // para levantar la web
+
+11) Los parciales son un bloque de codigo html que es reutilizable
+
+12) nodemon solo esta pendiente si se modificaron archivos js,
+sin embargo si queremos que este pendientes de archivos hbs u otros, ejecutamos el siguiente comando:
+nodemon server -e js,hbs,html,css
+
+
+
+13) Un helper no es mas que una funcion que se dispara cuando el template lo requiere
+
+14) heroku -v  // Es el comando para ver si heroku esta instalado
+
+15) Para hacer un deploy en Heroku, demos editar el archivo package.json
+
+"scripts": {
+    "start": "node 06.server.js", // <--- Agregamos esto para que cuando llamemos a este comando se ejecute ese contenido;
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+
+16) podemos probar ejecutando el siguiente comando en la consola, ojo el que start es una palabra especial:
+npm start
+
+17) creamos el comando nodemon
+
+ "scripts": {
+    "start": "node 06.server.js",
+    "nodemon": "nodemon 06.server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+
+  pero para ejecutarlo, necesitamos de una palabrita en el comando:
+  npm run nodemon
+
+18) Heroku, trabaja igual que git, por lo que tendremos que crear el gitignore para ignorar archivos
