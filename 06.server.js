@@ -5,7 +5,7 @@ const hbs = require('hbs');
 require('./hbs/helpers'); // Con esto llamamos a los helpers
 
 const port =  process.env.YOUR_PORT || process.env.PORT || 3000; // process.env.port || 3000; // Conseguimos el puerto del entorno, esto para tomar el puerto del servidor que se nos ha 
-const host = process.env.YOUR_HOST || '0.0.0.0';
+const host = process.env.YOUR_HOST || '0.0.0.0'; // El video no habla del host, pero sin esto se cae en heroku
 
 // brindado, en caso no exista tal entorno, tomará el puerto 3000
  
